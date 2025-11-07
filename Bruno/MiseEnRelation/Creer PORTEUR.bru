@@ -1,0 +1,29 @@
+meta {
+  name: Creer PORTEUR
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/utilisateurs
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nom": "Alice",
+    "email": "alice@ex.com",
+    "role": "PORTEUR"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

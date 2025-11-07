@@ -1,0 +1,31 @@
+meta {
+  name: DEV candidate au Projet
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/candidatures
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "projetId": 1,
+    "devId": 8,
+    "message": "Motivé pour ce projet !"
+  }
+  
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,30 @@
+meta {
+  name: Creer_Dev
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/api/utilisateurs
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nom": "Bob",
+    "email": "bob2@ex.com",
+    "role": "DEV"
+  }
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

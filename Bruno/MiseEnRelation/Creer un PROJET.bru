@@ -1,0 +1,34 @@
+meta {
+  name: Creer un PROJET
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/projets
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "titre": "Appli Mobile",
+    "description": "Faire une app mobile",
+    "dateLivraison": "2026-01-31",
+    "budget": 5000,
+    "thematique": "Mobile",
+    "porteurId": 1
+  }
+  
+  
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
