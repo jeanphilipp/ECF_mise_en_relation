@@ -4,7 +4,7 @@ Application backend de mise en relation entre **porteurs/porteuses de projet** e
 Les porteurs publient des projets, les devs candidatent, et les porteurs acceptent/refusent les candidatures.
 
 ## Stack
-- Java 17 (ou 21)
+- Java 25
 - Spring Boot (Web, Data JPA, Validation)
 - Base de données : **H2 en mémoire** (par défaut)
 - Build : Maven
